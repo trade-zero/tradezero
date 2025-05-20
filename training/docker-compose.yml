@@ -1,0 +1,13 @@
+services:
+  app:
+    container_name: train-trade-zero
+    build:
+      context: .
+      dockerfile: Dockerfile
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [ gpu ]
+    volumes:
+      - /c/Users/leona/RustroverProjects/flex.hub.ia/files:/app/files
