@@ -1,0 +1,14 @@
+from enum import Enum
+
+
+class EDealReason(Enum):
+    DEAL_REASON_CLIENT = 0
+    DEAL_REASON_MOBILE = 1
+    DEAL_REASON_WEB = 2
+    DEAL_REASON_EXPERT = 3
+    DEAL_REASON_SL = 4
+    DEAL_REASON_TP = 5
+    DEAL_REASON_SO = 6
+    DEAL_REASON_ROLLOVER = 7
+    DEAL_REASON_VMARGIN = 8
+    DEAL_REASON_SPLIT = 9

@@ -1,0 +1,10 @@
+from enum import Enum
+
+
+class ETransactionStatus(Enum):
+    ENTER_THE_MARKET = 0
+    PLACE_ORDERS_TO_BACKWARD = 1
+    PLACE_ORDERS_TO_FORWARD = 2
+    VERIFY_UPDATE_ON_ORDERS_AND_POSITIONS = 3
+    REMOVE_ORDERS = 4
+    REMOVE_POSITIONS = 5

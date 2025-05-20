@@ -1,0 +1,11 @@
+from enum import Enum
+
+
+class EDayOfWeek(Enum):
+    DAY_OF_WEEK_SUNDAY = 0
+    DAY_OF_WEEK_MONDAY = 1
+    DAY_OF_WEEK_TUESDAY = 2
+    DAY_OF_WEEK_WEDNESDAY = 3
+    DAY_OF_WEEK_THURSDAY = 4
+    DAY_OF_WEEK_FRIDAY = 5
+    DAY_OF_WEEK_SATURDAY = 6
