@@ -1,0 +1,5 @@
+
+p
+java:S1192-"ZDefine a constant instead of duplicating this literal "Agent not found with id: " 3 times.(²µÞ’
+h
+java:S6204 "RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹

@@ -1,0 +1,11 @@
+
+¢
+java:S1192-"aDefine a constant instead of duplicating this literal "Balance fact not found with id: " 3 times.(„ýÌÊøÿÿÿÿJ$418c4e58-d7a5-4db6-9c00-deeeb03b0a73
+o
+java:S6204 "RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ë’£Øî2
+o
+java:S62049"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8í’£Øî2
+o
+java:S6204E"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8î’£Øî2
+–
+java:S1602p"SRemove useless curly braces around statement and then remove useless return keyword(ÏÄý§8îÕ€‚î2J$f628b0b9-9b24-4f8a-8eaa-1d6c0f7658d8

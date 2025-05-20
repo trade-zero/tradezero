@@ -1,0 +1,15 @@
+
+
+java:S11922"_Define a constant instead of duplicating this literal "Order fact not found with id: " 3 times.(¶Ùð‹ýÿÿÿÿ8‰ÇÀ‚î2
+o
+java:S6204%"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Õ—£Øî2
+o
+java:S6204>"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8×—£Øî2
+o
+java:S6204J"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Ø—£Øî2
+o
+java:S6204V"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Ù—£Øî2
+o
+java:S6204b"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Ù—£Øî2
+o
+java:S6204n"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8Ú—£Øî2

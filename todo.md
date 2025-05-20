@@ -1,0 +1,114 @@
+# Progresso da API Trading
+
+## Tarefas
+- [x] Analisar arquivo SQL e extrair estrutura
+- [x] Gerar modelos JPA para tabelas
+  - [x] Criar enums (TradeDirectionType, TradeActionType, TradeAssetType, TradeTimeFrameType, OrderStatusType, OrderType)
+  - [x] Criar modelo StockDim
+  - [x] Criar modelo TimeFrameDim
+  - [x] Criar modelo ActionDim
+  - [x] Criar modelo DataFeedFact
+  - [x] Criar modelo DateTimeDim
+  - [x] Criar modelo CandlestickFact
+  - [x] Criar modelo AgentDim
+  - [x] Criar modelo TradeZeroDim
+  - [x] Criar modelo TradeZeroFact
+  - [x] Criar modelo PortfolioFact
+  - [x] Criar modelo OrderVenueDim
+  - [x] Criar modelo OrderDim
+  - [x] Criar modelo OrderFact
+  - [x] Criar modelo BalanceFact
+  - [x] Criar modelo PositionDim
+  - [x] Criar modelo PositionFact
+  - [x] Criar modelo RiskManagementFact
+  - [x] Criar modelo ActionFact
+  - [x] Criar modelo RiskMetricsFact
+- [x] Criar repositórios JPA para tabelas
+  - [x] Criar repositório para StockDim
+  - [x] Criar repositório para TimeFrameDim
+  - [x] Criar repositório para ActionDim
+  - [x] Criar repositório para DataFeedFact
+  - [x] Criar repositório para DateTimeDim
+  - [x] Criar repositório para CandlestickFact
+  - [x] Criar repositório para AgentDim
+  - [x] Criar repositório para TradeZeroDim
+  - [x] Criar repositório para TradeZeroFact
+  - [x] Criar repositório para PortfolioFact
+  - [x] Criar repositório para OrderVenueDim
+  - [x] Criar repositório para OrderDim
+  - [x] Criar repositório para OrderFact
+  - [x] Criar repositório para BalanceFact
+  - [x] Criar repositório para PositionDim
+  - [x] Criar repositório para PositionFact
+  - [x] Criar repositório para RiskManagementFact
+  - [x] Criar repositório para ActionFact
+  - [x] Criar repositório para RiskMetricsFact
+- [x] Criar controladores REST com CRUD completo
+  - [x] Criar DTOs para as entidades
+    - [x] StockDimDTO
+    - [x] TimeFrameDimDTO
+    - [x] ActionDimDTO
+    - [x] DataFeedFactDTO
+    - [x] DateTimeDimDTO
+    - [x] CandlestickFactDTO
+    - [x] AgentDimDTO
+    - [x] TradeZeroDimDTO
+    - [x] TradeZeroFactDTO
+    - [x] PortfolioFactDTO
+    - [x] OrderVenueDimDTO
+    - [x] OrderDimDTO
+    - [x] OrderFactDTO
+    - [x] BalanceFactDTO
+    - [x] PositionDimDTO
+    - [x] PositionFactDTO
+    - [x] RiskManagementFactDTO
+    - [x] ActionFactDTO
+    - [x] RiskMetricsFactDTO
+  - [x] Criar serviços para as entidades
+    - [x] StockDimService
+    - [x] TimeFrameDimService
+    - [x] ActionDimService
+    - [x] DataFeedFactService
+    - [x] DateTimeDimService
+    - [x] CandlestickFactService
+    - [x] AgentDimService
+    - [x] TradeZeroDimService
+    - [x] TradeZeroFactService
+    - [x] PortfolioFactService
+    - [x] OrderVenueDimService
+    - [x] OrderDimService
+    - [x] OrderFactService
+    - [x] BalanceFactService
+    - [x] PositionDimService
+    - [x] PositionFactService
+    - [x] RiskManagementFactService
+    - [x] ActionFactService
+    - [x] RiskMetricsFactService
+  - [x] Criar controladores REST
+    - [x] StockDimController
+    - [x] TimeFrameDimController
+    - [x] ActionDimController
+    - [x] DataFeedFactController
+    - [x] DateTimeDimController
+    - [x] CandlestickFactController
+    - [x] AgentDimController
+    - [x] TradeZeroDimController
+    - [x] TradeZeroFactController
+    - [x] PortfolioFactController
+    - [x] OrderVenueDimController
+    - [x] OrderDimController
+    - [x] OrderFactController
+    - [x] BalanceFactController
+    - [x] PositionDimController
+    - [x] PositionFactController
+    - [x] RiskManagementFactController
+    - [x] ActionFactController
+    - [x] RiskMetricsFactController
+- [x] Implementar configurações e boas práticas Spring
+  - [x] Configurar CORS
+  - [x] Implementar versionamento de API
+  - [x] Melhorar documentação OpenAPI
+  - [x] Configurar segurança básica
+  - [x] Implementar paginação e ordenação
+- [x] Validar funcionalidades e estrutura do projeto
+- [x] Reportar e entregar código ao usuário

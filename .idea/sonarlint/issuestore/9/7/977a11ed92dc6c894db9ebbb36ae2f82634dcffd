@@ -1,0 +1,11 @@
+
+š
+java:S1192-"^Define a constant instead of duplicating this literal "Portfolio not found with id: " 3 times.(º‡ÀâJ$7f00b4f6-5602-47df-acfc-79d646b02b6e
+o
+java:S6204 "RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ù£Øî2
+o
+java:S62049"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8û£Øî2
+o
+java:S6204E"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ü£Øî2
+o
+java:S6204_"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ı£Øî2

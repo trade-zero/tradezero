@@ -1,0 +1,17 @@
+
+ˆ
+java:S11924"fDefine a constant instead of duplicating this literal "Risk metrics fact not found with id: " 3 times.(ÎÉ³Ùýÿÿÿÿ8›Öµ‚î2
+o
+java:S6204'"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8 –£Øî2
+o
+java:S6204@"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8£–£Øî2
+o
+java:S6204L"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8£–£Øî2
+o
+java:S6204h"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¥–£Øî2
+o
+java:S6204t"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¥–£Øî2
+p
+java:S6204€"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¦–£Øî2
+Q
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëÝüÿÿÿÿ8­–£Øî2

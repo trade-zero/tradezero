@@ -1,0 +1,13 @@
+
+
+java:S11921"dDefine a constant instead of duplicating this literal "Order dimension not found with id: " 3 times.(µä§âùÿÿÿÿ
+o
+java:S6204$"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¦£Øî2
+o
+java:S6204="RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8¨£Øî2
+o
+java:S6204I"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8©£Øî2
+o
+java:S6204U"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ª£Øî2
+o
+java:S6204a"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8«£Øî2
