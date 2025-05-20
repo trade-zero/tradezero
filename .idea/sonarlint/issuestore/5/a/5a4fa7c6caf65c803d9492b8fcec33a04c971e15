@@ -1,0 +1,17 @@
+
+
+java:S1192-"bDefine a constant instead of duplicating this literal "Position fact not found with id: " 3 times.(ÖÈæ–J$f3221c4c-ae6c-4a45-b836-7adfd6f2a5f6
+o
+java:S6204 "RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8÷£Øî2
+o
+java:S62049"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ú£Øî2
+o
+java:S6204E"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8û£Øî2
+o
+java:S6204Q"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ü£Øî2
+o
+java:S6204]"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ı£Øî2
+o
+java:S6204i"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8ş£Øî2
+œ
+java:S1602…"SRemove useless curly braces around statement and then remove useless return keyword(ƒûøÁùÿÿÿÿ8ÿÏ½î2J$de37666a-5358-427f-9f15-24613dd498a2

@@ -1,0 +1,15 @@
+
+¥
+java:S1192-"dDefine a constant instead of duplicating this literal "Trade zero fact not found with id: " 3 times.(ê·ÒßÿÿÿÿÿJ$73a11fe8-4658-41a3-a3ec-b1c1db498f92
+o
+java:S6204 "RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8«£Øî2
+o
+java:S62049"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8­£Øî2
+o
+java:S6204E"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8®£Øî2
+o
+java:S6204Q"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8°£Øî2
+o
+java:S6204]"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹8±£Øî2
+u
+java:S1602y"SRemove useless curly braces around statement and then remove useless return keyword(êÚˆüÿÿÿÿ8ó’Ôî2
