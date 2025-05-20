@@ -1,0 +1,11 @@
+:host .text-label {
+  font-size: 0.8rem;
+}
+:host .errorMessage {
+  font-size: 10px;
+  color: red;
+  padding: 8px;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=dynamic-form-item.component.css.map */

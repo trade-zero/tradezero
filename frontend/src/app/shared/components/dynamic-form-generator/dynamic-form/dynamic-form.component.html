@@ -1,0 +1,85 @@
+<div [formGroup]="form()"
+     class="dynamic-form-container">
+
+  <div class="grid">
+
+    <div class="col-12">
+
+      <div class="card">
+
+        @if (title) {
+          <h2 class="text-primary font-bold">{{ title }}</h2>
+          <p-divider class="w-full"></p-divider>
+        }
+
+        <div class="flex flex-row justify-content-between align-items-center">
+
+          <div class="flex flex-row justify-content-start align-items-center gap-3">
+
+            <p-button
+              (click)="handleSave()"
+              *ngIf="!disabled"
+              [disabled]="form().invalid"
+              icon="pi pi-check"
+              label="Salvar"
+            />
+
+            <p-button
+              (click)="enableEdit()"
+              *ngIf="disabled"
+              icon="pi pi-pen-to-square"
+              label="Editar"
+              outlined
+              severity="info"/>
+
+            <p-button
+              (click)="disableEdit()"
+              *ngIf="!disabled"
+              icon="pi pi-times"
+              label="Cancelar"
+              outlined/>
+
+
+          </div>
+
+          <p-button
+            (click)="cancel()"
+            icon="pi pi-backward"
+            label="Voltar"
+            outlined
+            severity="info"
+          />
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <div class="grid">
+
+          @for (formItem of formItems; track formItem.key) {
+
+            <div [ngClass]="formItem.className"
+                 class="mb-3">
+
+              <app-dynamic-form-item
+                [formItem]="formItem"
+                [form]="form()">
+              </app-dynamic-form-item>
+
+            </div>
+
+          }
+
+          <ng-content></ng-content>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

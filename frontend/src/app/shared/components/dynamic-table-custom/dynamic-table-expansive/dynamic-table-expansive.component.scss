@@ -1,0 +1,14 @@
+:host {
+  ::ng-deep {
+    .p-datatable.p-datatable-sm .p-datatable-header {
+      padding: 0.5rem 0;
+    }
+    .p-button.p-button-icon-only.p-button-rounded {
+      width: 2rem;
+      height: 2rem;
+      padding: 0;
+    }
+  }
+}
+
+

@@ -1,0 +1,54 @@
+:host {
+  ::ng-deep {
+    .p-datatable.p-datatable-sm .p-datatable-header {
+      padding: 0.5rem 0;
+    }
+
+    .p-button.p-button-icon-only.p-button-rounded {
+      width: 2rem;
+      height: 2rem;
+      padding: 0;
+    }
+
+    .p-button.p-button-sm {
+      min-width: auto;
+
+      .pi {
+        font-size: 0.875rem;
+      }
+    }
+  }
+
+  .table-copy {
+    width: 2rem;
+    height: 2rem;
+
+    &-btn {
+      display: none;
+    }
+  }
+
+
+  .table-hover-active {
+    .table-copy-btn {
+      display: inline-block;
+    }
+  }
+
+  .copy-feedback {
+    animation: copy-fade 2s ease-out;
+  }
+
+  @keyframes copy-fade {
+    0% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+}

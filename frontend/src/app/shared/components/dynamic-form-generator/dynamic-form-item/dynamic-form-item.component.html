@@ -1,0 +1,28 @@
+<!-- dynamic-form-item.component.html -->
+<div class="flex-auto">
+
+  <label class="mb-2 flex flex-row gap-2 justify-content-start align-items-center">
+
+    <span class="font-bold text-label">{{ formItem.label }}</span>
+
+    @if (showRequiredError()) {
+      <span class="text-red-500 pi pi-exclamation-circle"
+            pTooltip="Campo obrigatório"
+            tooltipPosition="top">
+      </span>
+    }
+  </label>
+
+  <ng-container
+    *ngComponentOutlet="componentType();
+    inputs: {
+      formItem: formItem,
+      formControl: control()
+    }"/>
+
+  @if (showError()) {
+    <div class="text-red-500 text-sm mt-1">
+      {{ formItem.errorMessage || 'Campo inválido' }}
+    </div>
+  }
+</div>

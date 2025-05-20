@@ -1,0 +1,104 @@
+<span class="uppercase text-sm lg:font-semibold flex flex-row justify-content-start align-items-center">
+
+  @switch (col.columnType) {
+
+    @case (columnType.NESTED) {
+      {{ getNestedValue(rowData, col!.field!) }}
+    }
+    @case (columnType.DEFAULT) {
+      {{ rowData[col.field] }}
+    }
+    @case (columnType.CUSTOM_TEMPLATE) {
+
+      <ng-container *ngTemplateOutlet="col.customTemplate!; context: { rowData: rowData }"></ng-container>
+
+    }
+    @case (columnPipe.ACTIVE_STATUS) {
+      {{ rowData[col.field] | activeStatusPipe }}
+    }
+    @case (columnPipe.CPF) {
+      {{ rowData[col.field] | cpfPipe }}
+    }
+    @case (columnPipe.CNPJ) {
+      {{ rowData[col.field] | cnpjPipe }}
+    }
+    @case (columnPipe.PHONE) {
+      {{ rowData[col.field] | phonePipe }}
+    }
+    @case (columnPipe.TIME) {
+      {{ rowData[col.field] | date: 'HH:MM' }}
+    }
+    @case (columnPipe.DATE) {
+      {{ rowData[col.field] | date: 'dd/MM/yyyy' }}
+    }
+    @case (columnPipe.USER_STATUS) {
+      {{ rowData[col.field] | userStatusPipe }}
+    }
+    @case (columnType.DEFAULT_BUTTONS) {
+
+      <div class="flex flex-row gap-3">
+
+        <p-button severity="primary"
+                  rounded
+                  outlined
+                  [routerLink]="['editar', rowData.id]"
+                  [pTooltip]="'Editar'"
+                  icon="pi pi-file-edit"/>
+
+        <p-button severity="danger"
+                  rounded
+                  outlined
+                  [pTooltip]="'Delete'"
+                  icon="pi pi-times"/>
+      </div>
+
+    }
+
+        <!--   @if (col.onClick) {
+             <p-button severity="primary"
+                       rounded
+                       outlined
+                       (click)="col.onClick(rowData)"
+                       [pTooltip]="'Editar'"
+                       icon="pi pi-file-edit"/>
+           } @else {
+
+           <p-button severity="primary"
+                     rounded
+                     outlined
+                     [routerLink]="['editar', rowData.id]"
+                     [pTooltip]="'Editar'"
+                     icon="pi pi-file-edit"/>
+           }
+
+           <p-button severity="danger"
+                     rounded
+                     outlined
+                     [pTooltip]="'Delete'"
+                     icon="pi pi-times"/>-->
+
+    @default {
+      {{ getNestedValue(rowData, col.field!) }}
+    }
+  }
+
+  @if (col.columnType !== columnType.DEFAULT_BUTTONS) {
+
+    <span class="table-copy">
+          <p-button class="table-copy-btn"
+                    icon="pi pi-copy"
+                    outlined
+                    severity="secondary"
+                    styleClass="p-button-sm"
+                    tooltipPosition="top"
+                    [text]="true"
+                    [rounded]="true"
+                    [pTooltip]="'Copiar para área de transferência'"
+                    (onClick)="copyToClipboard(getCellValue(rowData, col))"
+                    [attr.aria-label]="'Copiar valor'">
+          </p-button>
+        </span>
+  }
+</span>
+
+

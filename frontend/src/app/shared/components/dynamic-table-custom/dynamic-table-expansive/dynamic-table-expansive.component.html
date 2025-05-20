@@ -1,0 +1,217 @@
+<div class="card">
+
+
+  <p-table
+    #dt1
+    (onRowCollapse)="onRowCollapse($event)"
+    (onRowExpand)="onRowExpand($event)"
+    [columns]="cols"
+    [expandedRowKeys]="expandedRows"
+    [globalFilterFields]="globalFilterFields"
+    [paginator]="true"
+    [rowsPerPageOptions]="[10, 20, 30, 40, 50]"
+    [rows]="10"
+    [tableStyle]="{ 'min-width': '50rem' }"
+    [value]="data"
+    dataKey="id"
+    styleClass="p-datatable-sm p-datatable-striped">
+
+    <ng-template pTemplate="caption">
+
+      <div class="flex flex-row justify-content-between align-items-center p-3">
+
+        <div class="flex flex-row gap-3 justify-content-center align-items-start">
+
+          @if (title) {
+            <span class="text-primary font-bold text-2xl"> {{ title }} </span>
+          }
+
+          <p-button *ngIf="showAddButton"
+                    [routerLink]="['adicionar']"
+                    icon="pi pi-plus"
+                    size="small"
+                    rounded
+                    outlined
+          />
+
+          <ng-content></ng-content>
+
+        </div>
+
+        <div class="flex flex-row gap-3 justify-content-end align-items-end">
+
+          <p-button (onClick)="clear(dt1)"
+                    [outlined]="true"
+                    icon="pi pi-filter-slash"
+                    label="Limpar filtros"/>
+
+          <span class="p-input-icon-left">
+
+            <i class="pi pi-search"></i>
+
+            <input [formControl]="filterControl"
+                   pInputText
+                   placeholder="Pesquisa"
+                   type="text"/>
+          </span>
+
+        </div>
+
+      </div>
+
+    </ng-template>
+
+    <ng-template let-columns
+                 pTemplate="header">
+
+      <tr>
+
+        <th style="width: 4rem"></th>
+
+        <th *ngFor="let col of columns"
+            [pSortableColumn]="col.field">
+          {{ col.header }}
+          <p-sortIcon [field]="col.field"/>
+        </th>
+
+      </tr>
+
+    </ng-template>
+
+    <ng-template let-rowData
+                 pTemplate="rowexpansion">
+
+      <tr>
+
+        <td [attr.colspan]="cols.length + 1">
+
+          <div class="p-3">
+
+            <p-table
+              [columns]="colsExpanded"
+              [value]="rowData[expandedFieldItem]"
+              styleClass="p-datatable-sm p-datatable-gridlines">
+
+              <ng-template pTemplate="caption">
+
+                <div class="flex flex-row justify-content-between align-items-center p-3">
+
+                  <div class="flex flex-row gap-3 justify-content-start align-items-center">
+
+                    @if (titleTableExpanded) {
+                      <span class="text-primary font-bold text-2xl"> {{ titleTableExpanded }} </span>
+                    }
+
+                    <p-button *ngIf="showAddButtonSecondTable"
+                              [routerLink]="['adicionar']"
+                              icon="pi pi-plus"
+                              size="small"
+                              rounded
+                              outlined
+                    />
+
+        <!--            <ng-container
+                      *ngTemplateOutlet="customComponent; context:{$implicit: { element: rowData  }}">
+                    </ng-container>-->
+
+                    <ng-content select=".expanded-content"></ng-content>
+
+                  </div>
+
+                  <div class="flex flex-row gap-3 justify-content-end align-items-end">
+
+                    <p-button (onClick)="clear(dt1)"
+                              [outlined]="true"
+                              icon="pi pi-filter-slash"
+                              label="Limpar filtros"/>
+
+                    <span class="p-input-icon-left">
+
+                      <i class="pi pi-search"></i>
+
+                      <input [formControl]="filterControl"
+                             pInputText
+                             placeholder="Pesquisa"
+                             type="text"/>
+                    </span>
+
+                  </div>
+
+                </div>
+
+              </ng-template>
+
+
+              <ng-template let-col
+                           pTemplate="header">
+
+                <tr>
+
+                  <th *ngFor="let col of colsExpanded">
+                    {{ col.header }}
+                  </th>
+
+                </tr>
+
+              </ng-template>
+
+              <ng-template let-subRow
+                           pTemplate="body">
+
+                <tr>
+
+                  <td *ngFor="let col of colsExpanded"
+                      appHover>
+
+                    <app-dynamic-table-item [column]="col"
+                                            [row]="subRow"></app-dynamic-table-item>
+
+                  </td>
+
+                </tr>
+
+              </ng-template>
+
+            </p-table>
+
+          </div>
+
+        </td>
+
+      </tr>
+    </ng-template>
+
+    <ng-template let-columns="columns"
+                 let-rowData
+                 pTemplate="body">
+
+      <tr>
+
+        <td>
+
+          <p-button
+            [icon]="'pi pi-chevron-right'"
+            [pRowToggler]="rowData"
+            pRowToggler
+            rounded
+            size="small"
+            text>
+          </p-button>
+
+        </td>
+
+        <td *ngFor="let col of columns"
+            appHover>
+
+          <app-dynamic-table-item [column]="col"
+                                  [row]="rowData"></app-dynamic-table-item>
+
+        </td>
+
+      </tr>
+
+    </ng-template>
+
+  </p-table>
+
+</div>
