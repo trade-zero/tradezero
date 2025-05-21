@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { CheckboxModule } from 'primeng/checkbox';
 
 @Component({
-  selector: 'app-dynamic-checkbox',
+  selector: 'tz-dynamic-checkbox',
   template: `
     <p-checkbox [binary]="formItem.binary"
                 [formControl]="formControl"

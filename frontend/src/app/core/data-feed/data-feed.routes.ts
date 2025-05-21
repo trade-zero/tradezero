@@ -3,6 +3,7 @@ import { DataFeedListComponent } from "@core/data-feed/data-feed-list/data-feed-
 import { DataFeedFormComponent } from "@core/data-feed/data-feed-form/data-feed-form.component";
 
 export default [
+    { path: '', redirectTo: 'list', pathMatch: 'full' },
     { path: 'list', component: DataFeedListComponent },
     { path: 'form', component: DataFeedFormComponent },
     { path: '**', redirectTo: '/notfound' }

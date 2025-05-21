@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { DropdownModule } from 'primeng/dropdown';
 
 @Component({
-  selector: 'app-dynamic-dropdown',
+  selector: 'tz-dynamic-dropdown',
   template: `
     <p-dropdown [formControl]="formControl"
                 [filter]="formItem.filter"

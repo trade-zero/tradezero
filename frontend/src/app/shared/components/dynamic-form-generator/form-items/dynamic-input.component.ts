@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import { InputTextModule } from 'primeng/inputtext';
 
 @Component({
-  selector: 'app-dynamic-input',
+  selector: 'tz-dynamic-input',
   template: `
     <input [formControl]="formControl"
            [id]="formItem.key"
