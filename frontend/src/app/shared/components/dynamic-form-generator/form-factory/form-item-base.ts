@@ -23,7 +23,7 @@ export class FormItemBase<T> {
   readOnly: boolean;
   showClear: boolean;
   type: string;
-  value: T | T[] | Date | undefined ;
+  value: T | T[] | Date | number | undefined | boolean | any ;
 
   constructor(
     options: {
@@ -47,7 +47,7 @@ export class FormItemBase<T> {
       required?: boolean;
       showClear?: boolean;
       type?: string;
-      value?: T | T[] | Date;
+      value?: T | T[] | Date | number | boolean | undefined | any;
     } = {},
   ) {
 
